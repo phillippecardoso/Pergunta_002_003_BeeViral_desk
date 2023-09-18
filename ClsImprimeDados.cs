@@ -37,12 +37,23 @@ namespace Pergunta_002_003_BeeViral_desk
 
       caminhoArquivo = caminhoArquivo + "teste.pdf";
 
+      DesenhaSubTituloPrincipal(pdf, graph, pen, XMarginSup, 20, "Lista de Pessoas com mais de 30 Anos.", colunaSize * 6);
+      XMarginSup += 20;
+
       foreach (DataGridViewRow r in dt.Rows)
       {
         if (int.Parse(r.Cells[2].Value.ToString()) >= 30) {
           DesenhaTituloValor(pdf, graph, pen, XMarginSup, ((colunaSize * 0) + 20), 6, "Nome");
-          DesenhaValorString(pdf, graph, pen, XMarginSup + 20, ((colunaSize * 0) + 20), 6, r.Cells[0].Value.ToString());
-          XMarginSup += 40;
+          DesenhaValorString(pdf, graph, pen, XMarginSup + 15, ((colunaSize * 0) + 20), 6, r.Cells[0].Value.ToString());
+          XMarginSup += 32;
+
+          if ((XMarginSup + 30) > (pdfPage.Height - 50))
+          {
+            pdfPage = pdf.AddPage();
+            pdfPage.Orientation = PdfSharp.PageOrientation.Portrait;
+            pdfPage.Size = PdfSharp.PageSize.A4;
+            graph = XGraphics.FromPdfPage(pdfPage);
+          }
         }
       }
 
@@ -54,6 +65,21 @@ namespace Pergunta_002_003_BeeViral_desk
       };
       p.Start();
     }
+    public XGraphics DesenhaSubTituloPrincipal(PdfDocument pdf, XGraphics graph, XPen pen, float XMarginSup, float XMarginEsq, string valor, float colunas)
+    {
+
+      XRect painelDadosCliente = new XRect(XMarginEsq, XMarginSup, colunas, 15);
+      graph.DrawRectangle(pen, new XSolidBrush(XColor.FromArgb(150, 255, 255, 235)), painelDadosCliente);
+      graph.DrawString(valor,
+                        new XFont("Calibri", 10, XFontStyle.Bold),
+                        new XSolidBrush(XColor.FromArgb(100, 160, 200)),
+                        painelDadosCliente,
+                        XStringFormats.Center);
+
+      return graph;
+
+    }
+
     public XGraphics DesenhaTituloValor(PdfDocument pdf, XGraphics graph, XPen pen, float XMarginSup, float XMarginEsq, float Colunas, string valor)
     {
 
