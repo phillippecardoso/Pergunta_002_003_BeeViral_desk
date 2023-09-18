@@ -14,9 +14,6 @@ namespace Pergunta_002_003_BeeViral_desk
     public string Nome { get; set; }
     public int Idade { get; set; }
     public string Email { get; set; }
-    public Pessoa()
-    {
-    }
     public Pessoa(DataGridView dt, string Nome, int Idade, string Email)
     {
       this.Nome = Nome;

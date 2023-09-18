@@ -18,15 +18,22 @@ namespace Pergunta_002_003_BeeViral_desk
     {
       try
       {
-        Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-        Match match = regex.Match(email);
-        return true;
+        if (email.Contains("@")){
+          if (email.Split("@").ToList().Last().Contains(".")){
+            return true;
+          } else {
+            return false;
+          }
+        }else {
+          return false;
+        }
       }
       catch (Exception e)
       {
         return false;
       }
     }
+
     public void LimpaCamposCadastro(){
       TxtNome.Text = "";
       TxtNome.Enabled = true;
