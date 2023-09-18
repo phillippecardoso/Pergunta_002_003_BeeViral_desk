@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pergunta_002_003_BeeViral_desk", "Pergunta_002_003_BeeViral_desk.csproj", "{6DCB9DCA-C509-4A10-AC0C-7C07CA40CBC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DCB9DCA-C509-4A10-AC0C-7C07CA40CBC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCB9DCA-C509-4A10-AC0C-7C07CA40CBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCB9DCA-C509-4A10-AC0C-7C07CA40CBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCB9DCA-C509-4A10-AC0C-7C07CA40CBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9EC6BD8-1595-4F30-AA25-8D9C537F6508}
+	EndGlobalSection
+EndGlobal
