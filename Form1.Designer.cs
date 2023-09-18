@@ -29,7 +29,7 @@ namespace Pergunta_002_003_BeeViral_desk
     /// </summary>
     private void InitializeComponent()
     {
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
       this.pnnNovaPessoa = new System.Windows.Forms.Panel();
       this.TxtIdade = new System.Windows.Forms.NumericUpDown();
       this.BttSalvar = new System.Windows.Forms.Button();
@@ -42,14 +42,15 @@ namespace Pergunta_002_003_BeeViral_desk
       this.label1 = new System.Windows.Forms.Label();
       this.PnnTodasPessoas = new System.Windows.Forms.Panel();
       this.DtPessoas = new System.Windows.Forms.DataGridView();
-      this.panel2 = new System.Windows.Forms.Panel();
-      this.BttCadastrar = new System.Windows.Forms.Button();
-      this.BttFiltraDados = new System.Windows.Forms.Button();
-      this.label8 = new System.Windows.Forms.Label();
       this.ClmNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.ClmIdade = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.ClmRemover = new System.Windows.Forms.DataGridViewButtonColumn();
+      this.panel2 = new System.Windows.Forms.Panel();
+      this.BttImprimir = new System.Windows.Forms.Button();
+      this.BttCadastrar = new System.Windows.Forms.Button();
+      this.BttFiltraDados = new System.Windows.Forms.Button();
+      this.label8 = new System.Windows.Forms.Label();
       this.pnnNovaPessoa.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.TxtIdade)).BeginInit();
       this.PnnTodasPessoas.SuspendLayout();
@@ -168,7 +169,7 @@ namespace Pergunta_002_003_BeeViral_desk
       this.PnnTodasPessoas.Dock = System.Windows.Forms.DockStyle.Fill;
       this.PnnTodasPessoas.Location = new System.Drawing.Point(0, 193);
       this.PnnTodasPessoas.Name = "PnnTodasPessoas";
-      this.PnnTodasPessoas.Size = new System.Drawing.Size(847, 304);
+      this.PnnTodasPessoas.Size = new System.Drawing.Size(847, 416);
       this.PnnTodasPessoas.TabIndex = 2;
       // 
       // DtPessoas
@@ -179,14 +180,14 @@ namespace Pergunta_002_003_BeeViral_desk
       this.DtPessoas.AllowUserToResizeRows = false;
       this.DtPessoas.BackgroundColor = System.Drawing.SystemColors.Control;
       this.DtPessoas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-      dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-      dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-      dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-      dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
-      dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-      dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-      this.DtPessoas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+      dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+      dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+      dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+      dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+      dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+      dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+      this.DtPessoas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
       this.DtPessoas.ColumnHeadersHeight = 29;
       this.DtPessoas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
       this.DtPessoas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -208,53 +209,9 @@ namespace Pergunta_002_003_BeeViral_desk
       this.DtPessoas.ShowCellToolTips = false;
       this.DtPessoas.ShowEditingIcon = false;
       this.DtPessoas.ShowRowErrors = false;
-      this.DtPessoas.Size = new System.Drawing.Size(847, 192);
+      this.DtPessoas.Size = new System.Drawing.Size(847, 271);
       this.DtPessoas.TabIndex = 10;
       this.DtPessoas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtPessoas_CellContentClick);
-      // 
-      // panel2
-      // 
-      this.panel2.Controls.Add(this.BttCadastrar);
-      this.panel2.Controls.Add(this.BttFiltraDados);
-      this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-      this.panel2.Location = new System.Drawing.Point(0, 226);
-      this.panel2.Name = "panel2";
-      this.panel2.Size = new System.Drawing.Size(847, 78);
-      this.panel2.TabIndex = 11;
-      // 
-      // BttCadastrar
-      // 
-      this.BttCadastrar.Location = new System.Drawing.Point(3, 38);
-      this.BttCadastrar.Name = "BttCadastrar";
-      this.BttCadastrar.Size = new System.Drawing.Size(841, 29);
-      this.BttCadastrar.TabIndex = 6;
-      this.BttCadastrar.Text = "Cadastrar Nova Pessoa";
-      this.BttCadastrar.UseVisualStyleBackColor = true;
-      this.BttCadastrar.Click += new System.EventHandler(this.BttCadastrar_Click);
-      // 
-      // BttFiltraDados
-      // 
-      this.BttFiltraDados.Location = new System.Drawing.Point(3, 3);
-      this.BttFiltraDados.Name = "BttFiltraDados";
-      this.BttFiltraDados.Size = new System.Drawing.Size(841, 29);
-      this.BttFiltraDados.TabIndex = 5;
-      this.BttFiltraDados.Text = "Exibir apenas acima de 30 anos";
-      this.BttFiltraDados.UseVisualStyleBackColor = true;
-      this.BttFiltraDados.Click += new System.EventHandler(this.BttFiltraDados_Click);
-      // 
-      // label8
-      // 
-      this.label8.BackColor = System.Drawing.Color.LightSlateGray;
-      this.label8.Dock = System.Windows.Forms.DockStyle.Top;
-      this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-      this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-      this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
-      this.label8.Location = new System.Drawing.Point(0, 0);
-      this.label8.Name = "label8";
-      this.label8.Size = new System.Drawing.Size(847, 34);
-      this.label8.TabIndex = 1;
-      this.label8.Text = "Todas as Pessoas";
-      this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
       // 
       // ClmNome
       // 
@@ -291,11 +248,66 @@ namespace Pergunta_002_003_BeeViral_desk
       this.ClmRemover.ReadOnly = true;
       this.ClmRemover.Width = 80;
       // 
+      // panel2
+      // 
+      this.panel2.Controls.Add(this.BttImprimir);
+      this.panel2.Controls.Add(this.BttCadastrar);
+      this.panel2.Controls.Add(this.BttFiltraDados);
+      this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+      this.panel2.Location = new System.Drawing.Point(0, 305);
+      this.panel2.Name = "panel2";
+      this.panel2.Size = new System.Drawing.Size(847, 111);
+      this.panel2.TabIndex = 11;
+      // 
+      // BttImprimir
+      // 
+      this.BttImprimir.Location = new System.Drawing.Point(3, 38);
+      this.BttImprimir.Name = "BttImprimir";
+      this.BttImprimir.Size = new System.Drawing.Size(841, 29);
+      this.BttImprimir.TabIndex = 7;
+      this.BttImprimir.Text = "Imprimir Lista de pessoas com mais de 30 anos";
+      this.BttImprimir.UseVisualStyleBackColor = true;
+      this.BttImprimir.Click += new System.EventHandler(this.BttImprimir_Click);
+      // 
+      // BttCadastrar
+      // 
+      this.BttCadastrar.Location = new System.Drawing.Point(3, 73);
+      this.BttCadastrar.Name = "BttCadastrar";
+      this.BttCadastrar.Size = new System.Drawing.Size(841, 29);
+      this.BttCadastrar.TabIndex = 6;
+      this.BttCadastrar.Text = "Cadastrar Nova Pessoa";
+      this.BttCadastrar.UseVisualStyleBackColor = true;
+      this.BttCadastrar.Click += new System.EventHandler(this.BttCadastrar_Click);
+      // 
+      // BttFiltraDados
+      // 
+      this.BttFiltraDados.Location = new System.Drawing.Point(3, 3);
+      this.BttFiltraDados.Name = "BttFiltraDados";
+      this.BttFiltraDados.Size = new System.Drawing.Size(841, 29);
+      this.BttFiltraDados.TabIndex = 5;
+      this.BttFiltraDados.Text = "Exibir apenas acima de 30 anos";
+      this.BttFiltraDados.UseVisualStyleBackColor = true;
+      this.BttFiltraDados.Click += new System.EventHandler(this.BttFiltraDados_Click);
+      // 
+      // label8
+      // 
+      this.label8.BackColor = System.Drawing.Color.LightSlateGray;
+      this.label8.Dock = System.Windows.Forms.DockStyle.Top;
+      this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+      this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+      this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+      this.label8.Location = new System.Drawing.Point(0, 0);
+      this.label8.Name = "label8";
+      this.label8.Size = new System.Drawing.Size(847, 34);
+      this.label8.TabIndex = 1;
+      this.label8.Text = "Todas as Pessoas";
+      this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(847, 497);
+      this.ClientSize = new System.Drawing.Size(847, 609);
       this.Controls.Add(this.PnnTodasPessoas);
       this.Controls.Add(this.pnnNovaPessoa);
       this.ForeColor = System.Drawing.Color.SlateGray;
@@ -336,6 +348,7 @@ namespace Pergunta_002_003_BeeViral_desk
     private System.Windows.Forms.DataGridViewTextBoxColumn Email;
     private System.Windows.Forms.DataGridViewTextBoxColumn ClmIdade;
     private System.Windows.Forms.DataGridViewButtonColumn ClmRemover;
+    private System.Windows.Forms.Button BttImprimir;
   }
 }
 

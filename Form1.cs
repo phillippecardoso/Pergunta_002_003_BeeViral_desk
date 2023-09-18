@@ -143,5 +143,11 @@ namespace Pergunta_002_003_BeeViral_desk
         }
       }
     }
+
+    private void BttImprimir_Click(object sender, EventArgs e)
+    {
+      ClsImprimeDados clsImprimeDados = new ClsImprimeDados();
+      clsImprimeDados.GeraDocumento(DtPessoas);
+    }
   }
 }
